@@ -3,18 +3,55 @@
     <head>
         <title>Equilia Widget</title>
         <style>
+            *, *::before, *::after { box-sizing: border-box; }
+
             body {
                 margin: 0;
                 padding: 0;
                 font-family: Arial, sans-serif;
+                background: #f0f2f5;
+                min-height: 100vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            header {
+                width: 100%;
+                background: #294e65;
+                color: #fff;
+                padding: 14px 24px;
+                font-size: 18px;
+                font-weight: 600;
+                letter-spacing: 0.02em;
+                position: fixed;
+                top: 0;
+                left: 0;
+            }
+
+            .widget-wrapper {
+                margin-top: 60px;
+                background: #fff;
+                border-radius: 12px;
+                box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+                overflow: hidden;
+                width: 420px;
+                max-width: 96vw;
+                min-height: 560px;
+                display: flex;
+                flex-direction: column;
             }
         </style>
     </head>
     <body>
+        <header>Equilia Widget Demo</header>
+        <div class="widget-wrapper">
 
-        <!-- Widget coppied from persona -->
-        <script src="https://equilia.site/api/v1/static/js/widget-script.js?v=1.0.14" data-config="{&quot;ORG_ID&quot;: &quot;e657fdb0-a294-43f6-8eb1-9af5f1347237&quot;, &quot;PUBLIC_KEY&quot;: &quot;265f5d9579c6413996ab9dd6cf73fd2e&quot;, &quot;PERSONA_ID&quot;: &quot;62480773-f99b-44f1-b8cd-bc669fb9d7ac&quot;, &quot;WIDGET_POSITION&quot;: &quot;bottom-right&quot;, &quot;WIDGET_THEME&quot;: [[119, 158, 200], [41, 78, 101], [255, 255, 255], [255, 255, 255], [51, 51, 51], [102, 102, 102], [225, 229, 233], [153, 153, 153], [231, 76, 60], [40, 167, 69]], &quot;EMBED_MODE&quot;: true}"></script>
-        <!-- End of widget -->
-
+            <!-- Widget coppied from persona -->
+            <script src="https://equilia.site/api/v1/static/js/widget-script.js?v=1.0.14" data-config="{&quot;ORG_ID&quot;: &quot;e657fdb0-a294-43f6-8eb1-9af5f1347237&quot;, &quot;PUBLIC_KEY&quot;: &quot;265f5d9579c6413996ab9dd6cf73fd2e&quot;, &quot;PERSONA_ID&quot;: &quot;62480773-f99b-44f1-b8cd-bc669fb9d7ac&quot;, &quot;WIDGET_POSITION&quot;: &quot;bottom-right&quot;, &quot;WIDGET_THEME&quot;: [[119, 158, 200], [41, 78, 101], [255, 255, 255], [255, 255, 255], [51, 51, 51], [102, 102, 102], [225, 229, 233], [153, 153, 153], [231, 76, 60], [40, 167, 69]], &quot;EMBED_MODE&quot;: true}"></script>
+            <!-- End of widget -->
+            
+        </div>
     </body>
 </html>
